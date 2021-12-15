@@ -4,6 +4,27 @@ import "../App.css"
 
 
 class Pets extends Component {
+    constructor(){
+        super()
+
+        this.state={
+            pets: []
+        }
+    }
+
+    fetchPets=()=>{
+        fetch("https://pursuit-veterinarian.herokuapp.com/api/pets")
+        .then((res)=> res.json())
+        .then((data)=>{
+            this.setState({
+                pets: data
+            });
+        });
+    }
+    componentDidMount=()=>{
+        this.fetchPets()
+    }
+
     render() {
       return (
         <div className="Pets">
@@ -13,7 +34,8 @@ class Pets extends Component {
         </div>
       )
     }
-  }
+
+}
   
   export default Pets;
   
