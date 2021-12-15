@@ -26,11 +26,22 @@ class Pets extends Component {
     }
 
     render() {
+
+    let petstoDisplay = this.state.pets.map((pet)=>{
+        return (
+            <div className="pet-card">
+                <h2>Name: {pet.name} </h2>
+                <h3>Species: {pet.kind} </h3>
+                <h3>Breed: {pet.breed} </h3>
+            </div>
+        )
+    })
       return (
         <div className="Pets">
             <h1>
-            Pets page
+            Pets Page
             </h1>
+            {petstoDisplay}
         </div>
       )
     }
