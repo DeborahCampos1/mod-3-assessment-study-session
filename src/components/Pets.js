@@ -41,7 +41,7 @@ class Pets extends Component {
             <h1>
             Pets Page
             </h1>
-            {petstoDisplay}
+            <div id="pets-container">{petstoDisplay}</div>
         </div>
       )
     }
