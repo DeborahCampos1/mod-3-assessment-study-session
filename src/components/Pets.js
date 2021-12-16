@@ -37,12 +37,10 @@ class Pets extends Component {
         )
     })
       return (
-        <div className="Pets">
-            <h1>
-            Pets Page
-            </h1>
-            <div id="pets-container">{petstoDisplay}</div>
-        </div>
+          <div>
+            <h1> Pets Page </h1>
+            <div className="pets-container">{petstoDisplay}</div>
+          </div>
       )
     }
 

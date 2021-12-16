@@ -36,7 +36,7 @@ class Employees extends Component {
 
         let employeesDropDown = this.state.employees.map((employee)=>{
             return(
-                <option>{employee.firstName}</option>
+                <option value={employee.firstName}>{employee.prefix}{employee.firstName} {employee.lastName}</option>
             )
         });
 

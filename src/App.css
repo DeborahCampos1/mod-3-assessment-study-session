@@ -11,3 +11,12 @@
   align-items: center;
   margin: 20px;
 }
+.pet-card{
+  border: 1px solid black;
+  margin: 20px;
+}
+.pets-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
